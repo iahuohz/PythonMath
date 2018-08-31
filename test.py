@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
@@ -109,3 +110,6 @@ print("A", A)
 print(x, residuals, rank, s)
 print(np.dot(slice_price, x))
 print(np.dot(A[0], x))      # 计算第1行的预测结果，与slice_price中的第一个元素相同
+=======
+import numpy as np
+>>>>>>> 6bae7ca0b17b7bfd2a4ee6cc9ff855d37eb44248
