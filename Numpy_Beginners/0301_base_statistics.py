@@ -39,3 +39,17 @@ print(diff_rate)
 a1 = np.array([1,2,3,4,5])
 a2 = np.array([0,1,5,3,7])
 print(np.maximum(a1, a2))
+
+# (9)数值截断
+# 对于低于或高于制定阈值的元素，将其值设置为指定阈值
+print("x=", x)
+print("clipped=", x.clip(3, 6))
+
+# (10)数据筛选
+# 筛选出满足大小范围的数据，形成数组返回
+print("x=", x)
+print("compress=", x.compress(x>5))
+
+# (11)依次计算从第一个元素到第i个元素的某种结果
+print(x.cumsum())
+print(x.cumprod())
