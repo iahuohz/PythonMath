@@ -2,17 +2,18 @@ import numpy as np
 import sys
 import matplotlib.pyplot as plt
 
-# (1)
-num_origins = 100
-x_origin = np.linspace(-np.pi, np.pi, num_origins)
-y_origin = np.sin(x_origin) + np.random.randn(num_origins) * 0.1
-poly = np.polyfit(x_origin, y_origin, 8)
-y_pred = np.polyval(poly, x_origin)
-plt.scatter(x_origin, y_origin)
-plt.plot(x_origin, y_pred)
-plt.show()
+# (1)使用ployfit进行高阶你和
+# num_origins = 100
+# x_origin = np.linspace(-np.pi, np.pi, num_origins)
+# y_origin = np.sin(x_origin) + np.random.randn(num_origins) * 0.1
+# poly = np.polyfit(x_origin, y_origin, 8)
+# print(poly)
+# y_pred = np.polyval(poly, x_origin)
+# plt.scatter(x_origin, y_origin)
+# plt.plot(x_origin, y_pred)
+# plt.show()
 
-# (2)多项式拟合Polyfit
+# (2)Polyfit的更多功能
 # bhp=np.loadtxt('data/BHP.csv', delimiter=',', usecols=(6,), unpack=True)
 # vale=np.loadtxt('data/VALE.csv', delimiter=',', usecols=(6,), unpack=True)
 # t = np.arange(len(bhp))
